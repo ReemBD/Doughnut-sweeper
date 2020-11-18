@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cadetblue;
+    text-align: center;
+    vertical-align: auto;
+}
+
+.board {
+    background-color: gray;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+}
+
+td {
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    width: 40px;
+    height: 40px;
+}
+
+.pressed {
+    background-color: black;
+    color: beige;
+}
