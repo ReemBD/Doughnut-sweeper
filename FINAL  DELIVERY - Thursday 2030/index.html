@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineSweepa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body onload="initGame()">
+    <img src="pictures/202.jpg" alt="">
+
+    <nav class="nav-bar">
+        <h1>Doughnut-Sweeper 🍩</h1>
+        <div class="dif-buttons-bar">
+            <button onclick="chooseLevel(0)" class="dif-button easy-btn">Easy (4x4)</button>
+            <button onclick="chooseLevel(1)" class="dif-button medium-btn">Medium (8x8)</button>
+            <button onclick="chooseLevel(2)" class="dif-button hard-btn">Hard (12x12)</button>
+        </div>
+        <div class="lives-count">
+            <h3> </h3>
+            <div class="timer">Timer</div> <span onclick="initGame()" class="status-emoji">😊</span>
+        </div>
+    </nav>
+    <div class="board-container">
+    </div>
+    <div class="hints-count">
+        <button onclick="toggleHint(this)" class="hint hint1">💡</button>
+        <button onclick="toggleHint(this)" class="hint hint2">💡</button>
+        <button onclick="toggleHint(this)" class="hint hint3">💡</button>
+    </div>
+
+
+    <script src="js/utils.js"></script>
+    <script src="js/mines.js"></script>
+    <script src="js/cells.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
